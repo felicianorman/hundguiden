@@ -14,7 +14,7 @@ export const Colors = {
     },
 
     light: {
-        primary: '#FEFAE0',
+        primary: '#f6f0f0',
         secondary: '#000000',
         tertiary: '#FFFFFF',
         quaternary: '#000000',
