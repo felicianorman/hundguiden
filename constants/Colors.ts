@@ -4,7 +4,7 @@ export const Colors = {
   warning: 'red',
   
     dark: {
-        primary: '#000000',
+        primary: '#2A201F',
         secondary: '#FEFAE0',
         tertiary: '#FFFFFF',
         quaternary: '#000000',
