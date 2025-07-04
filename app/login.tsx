@@ -11,12 +11,11 @@ export default function Login() {
     <ThemedView style={styles.container}>
       <View style={styles.inner}>
         <ThemedLogo />
-        <Spacer height={24} />
-        <Spacer height={8} />
+        <Spacer height={20} />
         <ThemedText style={styles.subtitle}>
           Upptäck hundvänliga platser nära dig
         </ThemedText>
-        <Spacer height={40} />
+        <Spacer height={20} />
         {/* Google Login Button */}
         <TouchableOpacity style={styles.googleButton}>
           <AntDesign name="google" size={24} color="#4285F4" style={{ marginRight: 8 }} />
@@ -44,6 +43,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: 24,
   },
+
   inner: {
     width: "100%",
     alignItems: "center",

@@ -16,7 +16,7 @@ export default function ThemedLogo({ style }: ThemedLogoProps) {
     <Image
       source={logoSource}
       style={[
-        { width: 300, height: 300, resizeMode: "contain" },
+        { width: 300, height: 150, resizeMode: "contain" },
         style,
       ]}
     />
