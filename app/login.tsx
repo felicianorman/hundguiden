@@ -11,7 +11,7 @@ export default function Login() {
     <ThemedView style={styles.container}>
       <View style={styles.inner}>
         <ThemedLogo />
-        <Spacer height={20} />
+        
         <ThemedText style={styles.subtitle}>
           Upptäck hundvänliga platser nära dig
         </ThemedText>
@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     textAlign: "center",
     opacity: 0.7,
+    fontFamily: "Poppins-Regular",
   },
   googleButton: {
     flexDirection: "row",
