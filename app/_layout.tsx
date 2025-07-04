@@ -1,5 +1,6 @@
 import { Stack } from "expo-router";
-import { useColorScheme, View } from "react-native";
+import { useColorScheme } from "react-native";
+import ThemedView from "../components/ThemedView";
 import { Colors } from "../constants/Colors";
 
 export default function RootLayout() {
@@ -7,17 +8,17 @@ export default function RootLayout() {
   const theme = colorScheme === 'dark' ? Colors.dark : Colors.light;
 
   return (
-    <View style={{ flex: 1, backgroundColor: theme.primary }}>
+    <ThemedView>
       <Stack 
         screenOptions={{ 
           headerStyle: { backgroundColor: theme.primary },
           headerTintColor: theme.secondary,
-          contentStyle: { backgroundColor: theme.primary }
+          contentStyle: { backgroundColor: theme.tertiary }
         }}
       >
         <Stack.Screen name="index" options={{ title: 'Hundguiden' }} />
         <Stack.Screen name="login" options={{ title: 'Login' }} />
       </Stack>
-    </View>
+    </ThemedView>
   );
 }

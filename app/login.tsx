@@ -1,11 +1,12 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text } from "react-native";
+
+import ThemedView from "../components/ThemedView";
 
 export default function Login() {
   return (
-      <View style={styles.container}>
-          
+    <ThemedView style={styles.container}>
       <Text>Login</Text>
-    </View>
+    </ThemedView>
   );
 }
 
