@@ -1,9 +1,7 @@
 export const Colors = {
   primary: '#FEFAE0',
   secondary: '#000000',
-  tertiary: '#FFFFFF',
-  quaternary: '#000000',
-    quinary: '#FFFFFF',
+  warning: 'red',
   
     dark: {
         primary: '#000000',
@@ -11,6 +9,8 @@ export const Colors = {
         tertiary: '#FFFFFF',
         quaternary: '#000000',
         quinary: '#FFFFFF',
+        text: '#FFFFFF',
+        title: '#FFFFFF',
     },
 
     light: {
@@ -19,5 +19,7 @@ export const Colors = {
         tertiary: '#FFFFFF',
         quaternary: '#000000',
         quinary: '#FFFFFF',
+        text: '#000000',
+        title: '#000000',
     },
 };
