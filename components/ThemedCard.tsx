@@ -1,10 +1,10 @@
 import React from "react";
-import { View, useColorScheme } from "react-native";
+import { StyleProp, View, ViewStyle, useColorScheme } from "react-native";
 import { Colors } from "../constants/Colors";
 
 interface ThemedCardProps {
     children: React.ReactNode;
-    style?: any;
+    style?: StyleProp<ViewStyle>;
 }
 
 export default function ThemedCard({ children, style }: ThemedCardProps) {

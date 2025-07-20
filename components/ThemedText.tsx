@@ -1,9 +1,9 @@
-import { Colors } from "@/constants/Colors";
-import { Text, useColorScheme } from "react-native";
+import { StyleProp, Text, TextStyle, useColorScheme } from "react-native";
+import { Colors } from "../constants/Colors";
 
 interface ThemedTextProps {
     children: React.ReactNode;
-    style?: any;
+    style?: StyleProp<TextStyle>;
 }
 
 export default function ThemedText({ children, style, ...props }: ThemedTextProps) {
