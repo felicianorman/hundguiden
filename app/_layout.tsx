@@ -1,5 +1,5 @@
 import { useFonts } from "expo-font";
-import { Stack } from "expo-router";
+import { SplashScreen, Stack } from "expo-router";
 import { ActivityIndicator, useColorScheme, View } from "react-native";
 import ThemedView from "../components/ThemedView";
 import { Colors } from "../constants/Colors";
@@ -13,6 +13,7 @@ export default function RootLayout() {
   });
 
   if (!fontsLoaded) {
+    SplashScreen.preventAutoHideAsync();
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <ActivityIndicator size="large" color={theme.text} />
@@ -20,6 +21,7 @@ export default function RootLayout() {
     );
   }
 
+  SplashScreen.hideAsync();
   return (
     <ThemedView>
       <Stack 
